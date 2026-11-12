@@ -1,99 +1,191 @@
-# Sabiha Mashruha Dipita - Full Stack Developer Portfolio
 
-A modern, accessible, and high-performance personal portfolio built with **Next.js 15 (App Router)**, **React 19**, **TypeScript**, and **Tailwind CSS**.
+# Sabiha Mashruha Dipita | Portfolio
 
-Featuring **Sabiha Mashruha Dipita**, Full Stack Developer and Computer Science & Engineering graduate from **Daffodil International University (DIU), Bangladesh**, highlighting competitive programming achievements as an **ICPC 2024 Dhaka Regional Contestant** and **NGPC 2022 Finalist**.
+A personal portfolio website showcasing my skills, projects, education, and achievements as a Full Stack Developer.
 
----
+## 🌐 Live Portfolio
 
-## 🚀 Quick Start
+[Visit My Portfolio](YOUR_VERCEL_PORTFOLIO_URL)
 
-### 1. Development Server
-Run the local development server:
+## 👩‍💻 About Me
+
+Hello! I'm **Sabiha Mashruha Dipita**, a Computer Science and Engineering graduate from Daffodil International University, Bangladesh.
+
+I'm passionate about building modern, responsive, and user-friendly web applications. I enjoy solving programming problems, exploring new technologies, and turning ideas into practical digital solutions.
+
+I'm continuously improving my development skills and working toward becoming a better full-stack developer.
+
+## ✨ Features
+
+- Fully responsive design for desktop, tablet, and mobile.
+- Modern lavender-black theme.
+- Professional introduction and About Me section.
+- Skills organized by technology categories.
+- Featured projects with dedicated detail pages.
+- Live Demo and GitHub Repository links for projects.
+- Education and achievements section.
+- Functional contact form with email integration.
+- Social media links.
+- Resume viewing and downloading.
+
+## 🛠️ Technologies Used
+
+**Frontend**
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- TypeScript
+- React
+- Next.js
+
+**Styling & UI**
+- Tailwind CSS
+- Bootstrap
+- DaisyUI
+- Sass
+
+**Backend & Database**
+- Node.js
+- Express.js
+- Laravel
+- MongoDB
+- SQL
+
+**Authentication & Services**
+- Better Auth
+- Resend
+
+**Tools**
+- Git
+- GitHub
+- VS Code
+- Figma
+
+## 🚀 Featured Projects
+
+### 1. BazarDor (বাজার দর)
+
+A Bengali market-price tracking application that helps users explore daily prices of essential products in Bangladesh.
+
+- **Live Demo:** [BazarDor](https://a07-bazar-dor-nu.vercel.app/)
+- **GitHub:** [Source Code](https://github.com/Sabiha74/A07-Bazar-Dor)
+- **Technologies:** Next.js, React, TypeScript, Tailwind CSS, MongoDB, Better Auth.
+
+**Key Features:**
+- Daily essential product price information.
+- Product categories and market-wise pricing.
+- Price increase and decrease indicators.
+- Current and previous price comparisons.
+- Authentication with email/password and social login.
+
+### 2. FitLog
+
+A responsive workout library and planning application that helps users explore exercises and manage daily workout activities.
+
+- **Live Demo:** [FitLog](https://assignment06-fit-log.vercel.app/)
+- **GitHub:** [Source Code](https://github.com/Sabiha74/Assignment06-Fit-Log)
+- **Technologies:** Next.js, React, TypeScript, Tailwind CSS, DaisyUI, REST API, LocalStorage.
+
+**Key Features:**
+- Browse workout exercises.
+- View exercise details and instructions.
+- Create daily workout plans.
+- Mark exercises as completed.
+- Save favorite exercises.
+- Sort exercises and track workout activities.
+
+### 3. DevStack
+
+A technology explorer application that allows users to browse different technologies and build their own development stack.
+
+- **Live Demo:** [DevStack](https://cool-caramel-4b6bfc.netlify.app/)
+- **GitHub:** [Source Code](https://github.com/Sabiha74/Assignment05)
+- **Technologies:** React, TypeScript, Tailwind CSS, DaisyUI, Vite.
+
+**Key Features:**
+- Explore technologies by category.
+- View technology descriptions and details.
+- Build a personalized development stack.
+- Add, remove, and clear selected technologies.
+- Responsive user interface.
+
+## ⚙️ Getting Started
+
+Follow these steps to run the project locally.
+
+### Prerequisites
+
+- Node.js
+- npm
+- Git
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/Sabiha74/Sabiha-Portfolio.git
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd Sabiha-Portfolio
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Configure environment variables**
+
+Create a `.env.local` file in the root directory:
+
+```env
+RESEND_API_KEY=your_resend_api_key
+CONTACT_EMAIL=your_email@example.com
+SENDER_EMAIL=your_verified_sender_email
+```
+
+Keep your API key private. Never upload `.env.local` to GitHub.
+
+**5. Run the development server**
+
 ```bash
 npm run dev
 ```
+
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### 2. Type & Lint Check
-Validate TypeScript types across all components, routes, and data models:
-```bash
-npm run lint
-```
+### Production Build
 
-### 3. Production Build
-Compile optimized static production bundle:
 ```bash
 npm run build
 ```
 
-### 4. Production Preview
-To serve the production build locally:
-```bash
-npm run start
-```
+## 🎓 Education
+
+**Bachelor of Science in Computer Science and Engineering**
+
+Daffodil International University, Bangladesh
+
+Graduated: 2026
+
+## 🏆 Achievements
+
+- Participated in ICPC 2024 Dhaka Regional Contest.
+- Finalist in NGPC 2022.
+
+## 📬 Contact
+
+I'm open to opportunities, collaboration, internships, and entry-level developer roles.
+
+- **Email:** [sabihamashruha74@gmail.com](mailto:sabihamashruha74@gmail.com)
+- **GitHub:** [Sabiha74](https://github.com/Sabiha74)
+- **LinkedIn:** [Sabiha Mashruha](https://www.linkedin.com/in/sabiha-mashruha/)
 
 ---
 
-## 🛠️ Tech Stack & Architecture
-
-- **Framework**: Next.js 15 (App Router with SSG static page pre-rendering)
-- **UI Library**: React 19
-- **Type Safety**: TypeScript 5 (Strict Mode enabled)
-- **Styling**: Tailwind CSS (Tailwind v3 with responsive utilities and CSS variables)
-- **Icons**: Authentic vector SVGs for all technology logos + Lucide React UI icons
-- **Theme**: Dark Navy / Charcoal primary mode (`#070B14`, `#0B1120`) with light mode toggle and `localStorage` persistence
-- **Security**: Direct, client-side email dispatch (`mailto:`) eliminating credential exposure or unauthorized mail relaying
-
----
-
-## 📂 Project Structure
-
-```text
-MY_Portfolio/
-├── public/
-│   ├── profile.png               # Real profile photo (Sabiha Mashruha Dipita)
-│   └── resume.pdf                # Genuine resume PDF file
-├── src/
-│   ├── app/
-│   │   ├── globals.css           # Global Tailwind CSS, theme tokens, reduced-motion rules
-│   │   ├── layout.tsx            # Root layout with metadata and ThemeProvider
-│   │   ├── not-found.tsx         # Root 404 page with return navigation
-│   │   ├── page.tsx              # Assembled homepage
-│   │   └── projects/
-│   │       └── [slug]/
-│   │           ├── page.tsx      # Dynamic project details page (SSG with generateStaticParams)
-│   │           └── loading.tsx   # Loading skeleton state
-│   ├── components/
-│   │   ├── About.tsx             # CSE journey, DIU foundation, NGPC 2022 & ICPC 2024
-│   │   ├── Contact.tsx           # Secure direct email contact, copy action, LinkedIn, GitHub
-│   │   ├── Education.tsx         # Daffodil International University credentials & contest honors
-│   │   ├── Experience.tsx        # ICPC 2024 & NGPC 2022 milestones & career readiness
-│   │   ├── Footer.tsx            # Footer navigation, copyright, and social links
-│   │   ├── Hero.tsx              # Name, designation, real photo, resume download, social links
-│   │   ├── Icons.tsx             # Authentic SVG vectors for GitHub and LinkedIn
-│   │   ├── Navbar.tsx            # Sticky responsive navigation with mobile drawer & theme toggle
-│   │   ├── Projects.tsx          # Project showcase cards (Dev Stack, Fit Log, DevConf)
-│   │   ├── ProjectThumbnail.tsx  # Reusable project screenshot/mockup visual component
-│   │   ├── TechIcons.tsx         # Genuine technology logos (HTML5, CSS3, JS, TS, React, Next, etc.)
-│   │   ├── ThemeProvider.tsx     # Theme context manager (Dark / Light)
-│   │   └── ThemeToggle.tsx       # Sun / Moon toggle button
-│   ├── data/
-│   │   └── portfolioData.ts      # Central data configuration
-│   └── types/
-│       └── portfolio.ts          # TypeScript interfaces for projects, skills, education, etc.
-├── next.config.mjs               # Next.js configuration
-├── postcss.config.mjs            # PostCSS configuration
-├── tailwind.config.ts            # Tailwind CSS configuration with theme tokens
-├── tsconfig.json                 # TypeScript compiler options
-└── package.json                  # Dependencies and scripts
-```
-
----
-
-## 🔒 Email Security Architecture
-
-To protect email privacy and prevent spam:
-- **No Private Credentials**: No email password, app password, SMTP credentials, API keys, or private tokens are stored in frontend code.
-- **Client-Side Dispatch**: The contact section provides a direct `mailto:` link that opens the visitor's default email client addressed to `sabihamashruha74@gmail.com`.
-- **Server-Side Roadmap**: If a web form submission is requested in the future, it should be connected via a secure, rate-limited backend API service (e.g. Resend, SendGrid) with server-side environment variables and anti-spam verification.
+⭐ Thank you for visiting my portfolio repository!
