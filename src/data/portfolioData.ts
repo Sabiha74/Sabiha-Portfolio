@@ -1,5 +1,8 @@
 import { PersonalInfo, SkillCategory, EducationEntry, MilestoneEntry, ProjectEntry } from "@/types/portfolio";
 
+export const GMAIL_COMPOSE_URL = "https://mail.google.com/mail/?view=cm&fs=1&to=sabihamashruha74%40gmail.com";
+export const RECIPIENT_EMAIL = "sabihamashruha74@gmail.com";
+
 export const personalInfo: PersonalInfo = {
   name: "Sabiha Mashruha Dipita",
   role: "Full Stack Developer",
@@ -10,11 +13,12 @@ export const personalInfo: PersonalInfo = {
   
   bioIntro:
     "Full Stack Developer with strong problem-solving fundamentals, I build responsive, robust web applications using React, Next.js, MongoDB, JavaScript, Python, C++, and basic Laravel.",
+
+  aboutStatement:
+    "I'm a Computer Science and Engineering graduate from Daffodil International University, passionate about building modern, responsive, and user-friendly web applications. I enjoy solving problems, learning new technologies, and turning ideas into practical digital solutions. I'm continuously improving my skills in frontend and full-stack development.",
   
   bioFull: [
-    "My journey in Computer Science and Engineering began with building algorithmic thinking and problem-solving intuition in C, C++, and Python. Competing in programming competitions—qualifying as a finalist in the National Girls Programming Contest (NGPC 2022) and participating in the prestigious ICPC 2024 Dhaka Regional Contest—sharpened my analytical skills, edge-case analysis, and collaborative programming abilities under strict constraints.",
-    "As a Full Stack Developer, I love translating complex logic into seamless, intuitive digital experiences. On the frontend, I specialize in crafting clean, accessible, and mobile-first user interfaces using React, Next.js, and Tailwind CSS. On the backend, I leverage foundational knowledge of Laravel, RESTful APIs, and database architecture to build end-to-end web solutions.",
-    "I am eager to contribute my technical foundation, quick learning ability, and dedication to engineering teams that value clean code, continuous growth, and high-impact products.",
+    "I'm a Computer Science and Engineering graduate from Daffodil International University, passionate about building modern, responsive, and user-friendly web applications. I enjoy solving problems, learning new technologies, and turning ideas into practical digital solutions. I'm continuously improving my skills in frontend and full-stack development.",
   ],
 
   // Resume file path: Add your resume file at public/resume.pdf
@@ -47,71 +51,59 @@ export const personalInfo: PersonalInfo = {
 
 export const skillsData: SkillCategory[] = [
   {
-    category: "Frontend",
-    description: "Modern component architectures, typed applications, and core web fundamentals.",
-    skills: [
-      { name: "HTML5", highlight: true },
-      { name: "CSS3", highlight: true },
-      { name: "JavaScript", highlight: true },
-      { name: "TypeScript", highlight: true },
-      { name: "React", highlight: true },
-      { name: "Next.js", highlight: true },
-    ],
-  },
-  {
     category: "Programming Languages",
-    description: "Strong problem-solving and algorithmic foundation developed through CS coursework and contests.",
+    description: "Core languages for algorithmic problem solving, competitive programming, and modern software engineering.",
     skills: [
       { name: "C", highlight: true },
       { name: "C++", highlight: true },
       { name: "Python", highlight: true },
+      { name: "JavaScript", highlight: true },
+      { name: "TypeScript", highlight: true },
+    ],
+  },
+  {
+    category: "Frameworks",
+    description: "Component-driven frontend architectures, full-stack frameworks, and server runtimes.",
+    skills: [
+      { name: "React", highlight: true },
+      { name: "Next.js", highlight: true },
+      { name: "Node.js", highlight: true },
+      { name: "Express.js", highlight: true },
+      { name: "Laravel", highlight: true },
     ],
   },
   {
     category: "Styling & UI",
-    description: "Utility frameworks, responsive design systems, preprocessors, and UI wireframing.",
+    description: "Semantic markup, utility CSS frameworks, responsive systems, and interface design.",
     skills: [
+      { name: "HTML5", highlight: true },
+      { name: "CSS3", highlight: true },
       { name: "Tailwind CSS", highlight: true },
       { name: "Bootstrap", highlight: true },
       { name: "DaisyUI", highlight: true },
-      { name: "Sass", highlight: true },
       { name: "Figma", highlight: true },
     ],
   },
   {
-    category: "Backend & Tools",
-    description: "Server-side runtimes, APIs, MVC frameworks, and essential developer workflows.",
+    category: "Database",
+    description: "Document-oriented and relational database systems for full-stack data persistence.",
     skills: [
-      { name: "Node.js", highlight: true },
-      { name: "Express.js", highlight: true },
-      { name: "Laravel", highlight: true },
-      { name: "Git", highlight: true },
-      { name: "GitHub", highlight: true },
-      { name: "VS Code", highlight: true },
+      { name: "MongoDB", highlight: true },
+      { name: "SQL", highlight: true },
     ],
   },
 ];
 
 export const educationData: EducationEntry = {
-  degree: "BSc in Computer Science and Engineering",
+  degree: "Bachelor of Science (BSc) in Computer Science and Engineering",
   institution: "Daffodil International University",
+  passed: "2026",
+  graduationYear: "2026",
   department: "Department of Computer Science and Engineering",
   location: "Bangladesh",
   status: "Graduate",
-  highlights: [
-    "Solid grounding in Computer Science fundamentals: Data Structures, Algorithms, OOP, Database Systems, Operating Systems, and Software Engineering.",
-    "Qualified and participated in the ICPC 2024 Dhaka Regional Contest.",
-    "Finalist in the National Girls Programming Contest (NGPC 2022).",
-    "Active participant in university programming bootcamps and competitive problem-solving workshops.",
-  ],
-  coursework: [
-    "Data Structures & Algorithms",
-    "Object-Oriented Programming (OOP)",
-    "Database Management Systems",
-    "Web Engineering & Internet Computing",
-    "Software Engineering & Design Patterns",
-    "Computer Networks",
-  ],
+  highlights: [],
+  coursework: [],
 };
 
 export const careerMilestones: MilestoneEntry[] = [
@@ -158,144 +150,167 @@ export const careerMilestones: MilestoneEntry[] = [
 
 export const projectCandidates: ProjectEntry[] = [
   {
-    id: "dev-stack",
-    slug: "dev-stack",
-    title: "Dev Stack",
-    tagline: "Developer utility and resource directory built with a modern React stack.",
-    status: "Candidate Project",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "DaisyUI"],
+    id: "bazardor",
+    slug: "bazardor",
+    title: "BazarDor (বাজার দর)",
+    tagline: "Bengali market-price tracking and essential commodity comparison platform.",
+    status: "Live Project",
+    githubUrl: "https://github.com/Sabiha74/A07-Bazar-Dor",
+    liveUrl: "https://a07-bazar-dor-nu.vercel.app/",
     summary:
-      "A curated developer workbench interface designed to showcase responsive layout architecture, component composition, and TypeScript safety.",
+      "A Bengali market-price tracking application that helps users explore daily prices of essential products in Bangladesh, compare current and previous prices, and view market-wise price information.",
     purpose:
-      "To provide software engineers and developers with a centralized catalog of modern development utilities and toolchains while serving as a practical project for clean React component composition and Tailwind CSS / DaisyUI theming.",
+      "To bring daily commodity price transparency across local markets in Bangladesh, empowering consumers to track price movements, compare market extremes, and verify authentic rates.",
     description:
-      "Dev Stack is an exploratory candidate project focused on building modular UI components for developer tooling and resources. It emphasizes clean categorization, search/filtering states, responsive grid systems, and consistent typography using Tailwind CSS combined with DaisyUI component styling.",
+      "A Bengali market-price tracking application that helps users explore daily prices of essential products in Bangladesh, compare current and previous prices, and view market-wise price information.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "MongoDB", "Better Auth"],
     features: [
-      "Modular card grid system with responsive breakpoints for desktop, tablet, and mobile devices.",
-      "Strict TypeScript typings for state management, component props, and category filters.",
-      "Clean UI component styling leveraging Tailwind CSS with DaisyUI design patterns.",
-      "Accessible interactive buttons, modal previews, and search inputs with visible focus rings.",
-      "Cohesive dark/light theme support with customizable color tokens.",
+      "Daily market price updates.",
+      "Product categories such as চাল, ডাল, তেল, সবজি, মাছ, মাংস, ডিম-দুধ, and মসলা.",
+      "Price increase and decrease comparisons.",
+      "Market-wise minimum, maximum, and average prices.",
+      "Email/password and Google/GitHub authentication.",
     ],
     roleAndContributions: [
-      "Designed and coded the frontend interface from the ground up using React and TypeScript.",
-      "Configured Tailwind CSS utility tokens and integrated DaisyUI component styles.",
-      "Implemented strict TypeScript interfaces for developer resource models and filter state.",
-      "Ensured semantic HTML elements and accessible keyboard navigation across all interactive cards.",
+      "Architected the full-stack web application using Next.js App Router and TypeScript.",
+      "Designed MongoDB database schemas for daily commodity pricing, market categories, and vendor rates.",
+      "Implemented secure multi-provider authentication using Better Auth (Email/Password, Google, and GitHub).",
+      "Crafted responsive Bengali UI components with dynamic price fluctuation badges using Tailwind CSS.",
     ],
     challengesAndSolutions: [
       {
-        challenge: "Managing component prop types and avoiding repetitive type declarations across multiple nested card components.",
-        solution: "Established a dedicated centralized types module with generic interfaces for resource items and filter predicates, ensuring strong compile-time safety.",
+        challenge: "Aggregating market-wise price variance (minimum, maximum, and average) across diverse regional markets in Bangladesh.",
+        solution: "Formulated optimized MongoDB aggregation pipelines to compute real-time analytical metrics per commodity category.",
       },
       {
-        challenge: "Harmonizing custom Tailwind color variables with pre-styled DaisyUI utility classes in dark mode.",
-        solution: "Configured explicit CSS custom property mappings in Tailwind config, ensuring DaisyUI components smoothly respect the user-selected dark/light theme state.",
+        challenge: "Managing seamless session persistence across both credentials and social OAuth providers.",
+        solution: "Configured Better Auth unified session handling with server-side middleware validation in Next.js.",
       },
     ],
     futureImprovements: [
-      "Add user-submitted resource submission with client-side form validation.",
-      "Implement local storage persistence so users can bookmark their favorite developer tools.",
-      "Introduce multi-tag filtering with fuzzy search query matching.",
+      "Interactive historical commodity price trend graphs and inflation charts.",
+      "Crowdsourced price verification with location-based proximity sorting.",
     ],
     learningOutcomes: [
-      "Deepening TypeScript interface typing in React component trees.",
-      "Structuring clean reusable presentation and container components.",
-      "Implementing accessible keyboard navigation for list filtering.",
+      "Production full-stack development with Next.js App Router and MongoDB.",
+      "Implementing Better Auth for versatile, secure user authentication.",
     ],
   },
   {
-    id: "fit-log",
-    slug: "fit-log",
-    title: "Fit Log",
-    tagline: "Activity and workout tracking dashboard concept with Next.js App Router.",
-    status: "Candidate Project",
-    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    id: "fitlog",
+    slug: "fitlog",
+    title: "FitLog",
+    tagline: "Responsive workout library and personal daily exercise planning application.",
+    status: "Live Project",
+    githubUrl: "https://github.com/Sabiha74/Assignment06-Fit-Log",
+    liveUrl: "https://assignment06-fit-log.vercel.app/",
     summary:
-      "A modern web dashboard concept for logging daily fitness routines, exploring Next.js App Router conventions and responsive dashboard layouts.",
+      "A responsive workout library and personal workout planning application. Users can explore exercises, view workout details, create daily workout plans, and save exercises for later.",
     purpose:
-      "To explore modern dashboard ergonomics and client-side data entry flows, allowing individuals to record exercise sets, repetitions, and cardio routines with an intuitive, distraction-free interface.",
+      "To provide workout enthusiasts and beginners with an intuitive, clutter-free exercise directory and customizable workout scheduler to achieve personal fitness targets.",
     description:
-      "Fit Log explores dashboard ergonomics and client-side data entry flows. Developed as a candidate project to master Next.js page routing, layouts, state handling, and interactive form controls using clean Tailwind CSS styling.",
+      "A responsive workout library and personal workout planning application. Users can explore exercises, view workout details, create daily workout plans, and save exercises for later.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "DaisyUI",
+      "React Toastify",
+      "REST API",
+      "LocalStorage",
+    ],
     features: [
-      "Clean dashboard overview with metric summary cards for daily and weekly workouts.",
-      "Structured log entry forms with responsive input controls for exercise sets, reps, and weights.",
-      "Status chips and date-based visual groupings for quick exercise log history review.",
-      "Dark-mode first interface designed for high contrast and readability in gym environments.",
-      "Mobile-first responsive drawer and table layout for on-the-go routine tracking.",
+      "Workout library with exercise information.",
+      "Detailed workout instructions and information.",
+      "Add up to five exercises to today's workout plan.",
+      "Mark completed workouts as done.",
+      "Save workouts for later.",
+      "Responsive design, sorting, notifications, loading states, and custom 404 page.",
     ],
     roleAndContributions: [
-      "Architected the project using Next.js App Router structure with dedicated route groups.",
-      "Developed interactive form components in React and TypeScript with client-side state validation.",
-      "Created responsive data display cards and statistics widgets using Tailwind CSS.",
-      "Ensured mobile viewports have touch-friendly tap targets and high-contrast dark theme colors.",
+      "Developed the workout planner using Next.js, React, and TypeScript.",
+      "Implemented interactive plan builder with 5-exercise daily limit and completion status toggles.",
+      "Built persistent exercise bookmarking using browser LocalStorage.",
+      "Styled the application with responsive Tailwind CSS utilities and DaisyUI components.",
+      "Integrated React Toastify notifications for real-time user action confirmations.",
     ],
     challengesAndSolutions: [
       {
-        challenge: "Handling dynamic multi-row exercise set entries without causing redundant component re-renders.",
-        solution: "Structured local state updates using immutable array helper patterns and memoized individual row components.",
+        challenge: "Synchronizing exercise additions and completions between library views and the daily planner without state drift.",
+        solution: "Centralized client-side state management with LocalStorage event hooks, ensuring instant reactivity across components.",
       },
       {
-        challenge: "Maintaining consistent styling between SSR-rendered shell pages and client-interactive form modals.",
-        solution: "Separated static layout containers from client-interactive components in Next.js App Router to prevent hydration mismatches.",
+        challenge: "Preventing Next.js SSR hydration mismatches when reading saved routines from client storage.",
+        solution: "Structured safe client-side hydration gates with dedicated loading placeholders and skeleton states.",
       },
     ],
     futureImprovements: [
-      "Connect client-side form state with a persistent backend API or database.",
-      "Add graphical trend charts to visualize strength progression over time.",
-      "Include customizable workout templates and routine export to PDF/CSV.",
+      "Rest interval timers and audio cues between exercise sets.",
+      "Export workout routines to PDF and calendar integration.",
     ],
     learningOutcomes: [
-      "Leveraging Next.js App Router nested layouts and route groups.",
-      "Managing component state transitions and responsive sidebars.",
-      "Designing clean data visualization placeholders with semantic HTML.",
+      "State persistence strategies in Next.js client components.",
+      "Designing responsive workout grids with sorting and interactive feedback.",
     ],
   },
   {
-    id: "devconf",
-    slug: "devconf",
-    title: "DevConf",
-    tagline: "Tech conference landing page focused on semantic HTML and responsive CSS.",
-    status: "Candidate Project",
-    technologies: ["HTML5", "CSS3", "JavaScript"],
+    id: "devstack",
+    slug: "devstack",
+    title: "DevStack",
+    tagline: "Responsive technology explorer and interactive developer stack builder.",
+    status: "Live Project",
+    githubUrl: "https://github.com/Sabiha74/Assignment05",
+    liveUrl: "https://cool-caramel-4b6bfc.netlify.app/",
     summary:
-      "A responsive conference landing page emphasizing core frontend fundamentals, semantic hierarchy, and vanilla JavaScript interactions.",
+      "A responsive technology explorer that helps developers discover technologies, understand their difficulty and ratings, and build their own development stack.",
     purpose:
-      "To build an accessible, responsive tech conference landing page from scratch, demonstrating strong fundamentals in pure CSS Grid/Flexbox layouts and vanilla JavaScript DOM manipulation without framework dependencies.",
+      "To help engineers, students, and teams compare modern software technologies, evaluate learning difficulty curves and ratings, and curate customized development stacks.",
     description:
-      "DevConf is a foundational candidate project designed to master the fundamentals of the web: semantic HTML5 markup, flexible CSS Grid and Flexbox layouts, and vanilla JavaScript for DOM manipulation (interactive FAQs, modal popups, and smooth mobile navigation).",
+      "A responsive technology explorer that helps developers discover technologies, understand their difficulty and ratings, and build their own development stack.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "DaisyUI",
+      "React Toastify",
+      "Vite",
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6)",
+    ],
     features: [
-      "100% semantic HTML structure adhering to Web Content Accessibility Guidelines (WCAG).",
-      "Pure CSS responsive layouts leveraging CSS Grid and Flexbox without framework overhead.",
-      "Interactive schedule filter tabs allowing attendees to browse sessions by track.",
-      "Accessible modal popups with focus trapping for speaker biographies.",
-      "Smooth scroll navigation and lightweight vanilla JavaScript mobile navigation toggle.",
+      "Browse technologies by category.",
+      "View technology details, descriptions, difficulty, and ratings.",
+      "Add technologies to a personal developer stack.",
+      "Remove individual technologies.",
+      "Clear the entire stack.",
+      "Notifications for stack interactions.",
+      "Responsive desktop, tablet, and mobile layouts.",
     ],
     roleAndContributions: [
-      "Authored semantic HTML5 document structure with appropriate ARIA roles and landmark tags.",
-      "Built mobile-first responsive stylesheets utilizing custom CSS properties and media queries.",
-      "Implemented vanilla JavaScript event listeners for interactive tabs, accordions, and modal dialogs.",
-      "Tested keyboard navigation, tab order, and screen reader compatibility across multiple browsers.",
+      "Built the tech explorer from scratch using React, TypeScript, and Vite.",
+      "Designed the interactive stack drawer allowing developers to add, inspect, and remove tools.",
+      "Crafted category filtering and visual rating badges using Tailwind CSS and DaisyUI.",
+      "Integrated React Toastify alerts for stack additions, removal warnings, and clearing operations.",
     ],
     challengesAndSolutions: [
       {
-        challenge: "Implementing an accessible modal dialog in vanilla JavaScript without third-party dialog libraries.",
-        solution: "Programmed custom keydown listeners for Escape key handling, backdrop click detection, and focus trapping within the modal container.",
+        challenge: "Handling real-time stack updates and preventing duplicate technology additions with graceful feedback.",
+        solution: "Implemented set-based validation with instant React Toastify warning alerts when duplicate technologies are selected.",
       },
       {
-        challenge: "Building a complex multi-column schedule grid that remains readable on small smartphone screens.",
-        solution: "Utilized CSS Grid with minmax() and media queries to dynamically collapse track columns into stacked time cards on mobile viewports.",
+        challenge: "Maintaining consistent responsive layout behavior across desktop, tablet, and smartphone screens.",
+        solution: "Constructed mobile-first flex and grid containers with touch-friendly tap targets and collapsible filter tabs.",
       },
     ],
     futureImprovements: [
-      "Add interactive ticket registration form with real-time field validation.",
-      "Implement offline caching using a Service Worker for conference venue connectivity drops.",
-      "Include interactive venue map with geolocation hints.",
+      "Stack sharing via unique short URLs.",
+      "Community technology reviews and alternative tool suggestions.",
     ],
     learningOutcomes: [
-      "Mastering vanilla CSS Flexbox and Grid without utility frameworks.",
-      "Understanding browser event bubbling and DOM event listeners.",
-      "Building accessible accordion and modal patterns from scratch.",
+      "Interactive item collection management and filter composition in React.",
+      "Structuring clean UI design systems with Tailwind CSS and DaisyUI.",
     ],
   },
 ];

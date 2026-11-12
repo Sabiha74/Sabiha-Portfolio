@@ -15,6 +15,7 @@ export interface PersonalInfo {
   location: string;
   bioIntro: string;
   bioFull: string[];
+  aboutStatement: string;
   resumeUrl: string;
   avatarUrl?: string;
   socials: SocialLinks;
@@ -23,7 +24,7 @@ export interface PersonalInfo {
 }
 
 export interface SkillCategory {
-  category: "Frontend" | "Programming Languages" | "Styling & UI" | "Backend & Tools" | string;
+  category: "Programming Languages" | "Frameworks" | "Styling & UI" | "Database" | string;
   description: string;
   skills: {
     name: string;
@@ -35,13 +36,13 @@ export interface SkillCategory {
 export interface EducationEntry {
   degree: string;
   institution: string;
-  department: string;
+  passed: string;
   graduationYear?: string;
-  cgpa?: string;
-  location: string;
-  status: string;
-  highlights: string[];
-  coursework: string[];
+  department?: string;
+  location?: string;
+  status?: string;
+  highlights?: string[];
+  coursework?: string[];
 }
 
 export interface MilestoneEntry {
@@ -63,7 +64,7 @@ export interface ProjectEntry {
   slug: string;
   title: string;
   tagline: string;
-  status: "Candidate Project" | "In Development" | "Prototype";
+  status: "Live Project" | "Candidate Project" | "In Development" | "Prototype" | string;
   technologies: string[];
   summary: string;
   purpose: string;

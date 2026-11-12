@@ -3,19 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --background: #FFFFFF;
-  --foreground: #0F172A;
-  --card-background: #F8FAFC;
-  --border-color: #E2E8F0;
-  --muted-text: #64748B;
+  --background: #FCFAFF;
+  --foreground: #1C152B;
+  --surface: #F4EFFE;
+  --card-background: #FFFFFF;
+  --border-color: #E2D9F3;
+  --muted-text: #6C5F82;
+  --accent: #7C55E7;
+  --accent-secondary: #9675E8;
 }
 
 .dark {
-  --background: #070B14;
-  --foreground: #F8FAFC;
-  --card-background: #0F172A;
-  --border-color: #1E293B;
-  --muted-text: #94A3B8;
+  --background: #100D18;
+  --foreground: #F4F0FC;
+  --surface: #171323;
+  --card-background: #1E1930;
+  --border-color: #342B49;
+  --muted-text: #B9B0CC;
+  --accent: #B69CFF;
+  --accent-secondary: #9675E8;
 }
 
 html {
@@ -31,7 +37,7 @@ body {
   min-height: 100vh;
 }
 
-/* Custom scrollbar for pleasant dark aesthetics */
+/* Custom scrollbar for lavender-black aesthetics */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -42,23 +48,23 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #334155;
+  background: #342B49;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  background: #4F3F70;
 }
 
-/* Selection style */
+/* Selection style with lavender accent */
 ::selection {
-  background-color: #3b82f6;
-  color: #ffffff;
+  background-color: #9675E8;
+  color: #FFFFFF;
 }
 
 /* Focus visible styling */
 :focus-visible {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #B69CFF;
   outline-offset: 2px;
 }
 
@@ -75,4 +81,3 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
-

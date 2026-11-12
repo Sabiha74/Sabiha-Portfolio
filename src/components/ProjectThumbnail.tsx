@@ -1,5 +1,5 @@
 import React from "react";
-import { Terminal, Activity, Globe, Sparkles } from "lucide-react";
+import { ShoppingCart, Dumbbell, Layers, TrendingUp, Calendar, Code2, Sparkles } from "lucide-react";
 
 interface ProjectThumbnailProps {
   id: string;
@@ -12,92 +12,140 @@ export function ProjectThumbnail({ id, title, className = "", size = "card" }: P
   const isHero = size === "hero";
 
   switch (id) {
-    case "dev-stack":
+    case "bazardor":
       return (
         <div
           className={`relative w-full ${
-            isHero ? "h-64 sm:h-80 md:h-96" : "h-48"
-          } bg-gradient-to-br from-slate-900 via-blue-950/40 to-slate-900 flex flex-col items-center justify-center p-6 text-center border-b border-slate-200/60 dark:border-slate-800 ${className}`}
+            isHero ? "h-64 sm:h-80 md:h-96" : "h-52"
+          } bg-gradient-to-br from-[#100D18] via-[#1E1930] to-[#171323] flex flex-col items-center justify-center p-6 text-center border-b border-[#342B49] overflow-hidden ${className}`}
         >
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent pointer-events-none" />
+          {/* Subtle lavender ambient radial gradient */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-lavender-400/10 via-transparent to-transparent pointer-events-none" />
+
+          {/* Decorative price tracking grid graphic */}
+          <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#B69CFF_1px,transparent_1px),linear-gradient(to_bottom,#B69CFF_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
+
+          {/* Icon Badge */}
           <div
             className={`${
               isHero ? "w-16 h-16 mb-4" : "w-12 h-12 mb-3"
-            } rounded-2xl bg-blue-500/10 text-blue-400 border border-blue-500/20 flex items-center justify-center shadow-lg shadow-blue-500/5 group-hover:scale-110 transition-transform duration-300`}
+            } rounded-2xl bg-lavender-400/15 text-lavender-300 border border-lavender-400/30 flex items-center justify-center shadow-lg shadow-lavender-500/10 group-hover:scale-105 transition-transform duration-300`}
           >
-            <Terminal className={isHero ? "w-8 h-8" : "w-6 h-6"} />
+            <ShoppingCart className={isHero ? "w-8 h-8" : "w-6 h-6"} />
           </div>
-          <div className={`font-mono ${isHero ? "text-base sm:text-lg" : "text-xs"} text-blue-400 font-semibold tracking-tight`}>
-            &lt;DevStack /&gt;
+
+          {/* Title and Tagline */}
+          <div className={`font-bold ${isHero ? "text-xl sm:text-2xl" : "text-base"} text-lavender-200 tracking-tight`}>
+            বাজার দর &bull; BazarDor
           </div>
-          <div className={`${isHero ? "text-sm mt-2 max-w-md" : "text-[11px] mt-1"} text-slate-400`}>
-            Developer Workbench &amp; UI Directory
+          <div className={`${isHero ? "text-sm mt-2 max-w-md" : "text-xs mt-1"} text-[#B9B0CC]`}>
+            Market-Price Tracking &amp; Price Comparison
           </div>
-          <div className="mt-3 flex items-center gap-2">
-            <span className="px-2.5 py-0.5 rounded text-[10px] font-mono bg-blue-950/80 text-blue-300 border border-blue-800/80 flex items-center gap-1">
-              <Sparkles className="w-2.5 h-2.5" />
-              Project Mockup / Screenshot Placeholder
+
+          {/* Pill Highlights */}
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
+            <span className="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-[#171323] text-lavender-300 border border-[#342B49] flex items-center gap-1.5">
+              <TrendingUp className="w-3 h-3 text-emerald-400" />
+              <span>চাল, ডাল, তেল, সবজি, মাছ, মাংস</span>
             </span>
+            {isHero && (
+              <span className="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-[#171323] text-lavender-300 border border-[#342B49] flex items-center gap-1.5">
+                <Sparkles className="w-3 h-3 text-lavender-400" />
+                <span>Next.js &bull; MongoDB &bull; Better Auth</span>
+              </span>
+            )}
           </div>
         </div>
       );
 
-    case "fit-log":
+    case "fitlog":
       return (
         <div
           className={`relative w-full ${
-            isHero ? "h-64 sm:h-80 md:h-96" : "h-48"
-          } bg-gradient-to-br from-slate-900 via-indigo-950/40 to-slate-900 flex flex-col items-center justify-center p-6 text-center border-b border-slate-200/60 dark:border-slate-800 ${className}`}
+            isHero ? "h-64 sm:h-80 md:h-96" : "h-52"
+          } bg-gradient-to-br from-[#100D18] via-[#1E1930] to-[#171323] flex flex-col items-center justify-center p-6 text-center border-b border-[#342B49] overflow-hidden ${className}`}
         >
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-500/10 via-transparent to-transparent pointer-events-none" />
+          {/* Subtle lavender ambient radial gradient */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-lavender-400/10 via-transparent to-transparent pointer-events-none" />
+
+          {/* Decorative grid */}
+          <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#B69CFF_1px,transparent_1px),linear-gradient(to_bottom,#B69CFF_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
+
+          {/* Icon Badge */}
           <div
             className={`${
               isHero ? "w-16 h-16 mb-4" : "w-12 h-12 mb-3"
-            } rounded-2xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 flex items-center justify-center shadow-lg shadow-indigo-500/5 group-hover:scale-110 transition-transform duration-300`}
+            } rounded-2xl bg-lavender-400/15 text-lavender-300 border border-lavender-400/30 flex items-center justify-center shadow-lg shadow-lavender-500/10 group-hover:scale-105 transition-transform duration-300`}
           >
-            <Activity className={isHero ? "w-8 h-8" : "w-6 h-6"} />
+            <Dumbbell className={isHero ? "w-8 h-8" : "w-6 h-6"} />
           </div>
-          <div className={`font-mono ${isHero ? "text-base sm:text-lg" : "text-xs"} text-indigo-400 font-semibold tracking-tight`}>
-            &lt;FitLog Dashboard /&gt;
+
+          {/* Title and Tagline */}
+          <div className={`font-bold ${isHero ? "text-xl sm:text-2xl" : "text-base"} text-lavender-200 tracking-tight`}>
+            FitLog
           </div>
-          <div className={`${isHero ? "text-sm mt-2 max-w-md" : "text-[11px] mt-1"} text-slate-400`}>
-            Next.js App Router Activity Tracker
+          <div className={`${isHero ? "text-sm mt-2 max-w-md" : "text-xs mt-1"} text-[#B9B0CC]`}>
+            Workout Library &amp; Daily Routine Planner
           </div>
-          <div className="mt-3 flex items-center gap-2">
-            <span className="px-2.5 py-0.5 rounded text-[10px] font-mono bg-indigo-950/80 text-indigo-300 border border-indigo-800/80 flex items-center gap-1">
-              <Sparkles className="w-2.5 h-2.5" />
-              Project Mockup / Screenshot Placeholder
+
+          {/* Pill Highlights */}
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
+            <span className="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-[#171323] text-lavender-300 border border-[#342B49] flex items-center gap-1.5">
+              <Calendar className="w-3 h-3 text-lavender-400" />
+              <span>Daily 5-Exercise Routine Plan</span>
             </span>
+            {isHero && (
+              <span className="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-[#171323] text-lavender-300 border border-[#342B49] flex items-center gap-1.5">
+                <Sparkles className="w-3 h-3 text-lavender-400" />
+                <span>Next.js &bull; DaisyUI &bull; LocalStorage</span>
+              </span>
+            )}
           </div>
         </div>
       );
 
-    case "devconf":
+    case "devstack":
       return (
         <div
           className={`relative w-full ${
-            isHero ? "h-64 sm:h-80 md:h-96" : "h-48"
-          } bg-gradient-to-br from-slate-900 via-sky-950/40 to-slate-900 flex flex-col items-center justify-center p-6 text-center border-b border-slate-200/60 dark:border-slate-800 ${className}`}
+            isHero ? "h-64 sm:h-80 md:h-96" : "h-52"
+          } bg-gradient-to-br from-[#100D18] via-[#1E1930] to-[#171323] flex flex-col items-center justify-center p-6 text-center border-b border-[#342B49] overflow-hidden ${className}`}
         >
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-500/10 via-transparent to-transparent pointer-events-none" />
+          {/* Subtle lavender ambient radial gradient */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-lavender-400/10 via-transparent to-transparent pointer-events-none" />
+
+          {/* Decorative grid */}
+          <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#B69CFF_1px,transparent_1px),linear-gradient(to_bottom,#B69CFF_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
+
+          {/* Icon Badge */}
           <div
             className={`${
               isHero ? "w-16 h-16 mb-4" : "w-12 h-12 mb-3"
-            } rounded-2xl bg-sky-500/10 text-sky-400 border border-sky-500/20 flex items-center justify-center shadow-lg shadow-sky-500/5 group-hover:scale-110 transition-transform duration-300`}
+            } rounded-2xl bg-lavender-400/15 text-lavender-300 border border-lavender-400/30 flex items-center justify-center shadow-lg shadow-lavender-500/10 group-hover:scale-105 transition-transform duration-300`}
           >
-            <Globe className={isHero ? "w-8 h-8" : "w-6 h-6"} />
+            <Layers className={isHero ? "w-8 h-8" : "w-6 h-6"} />
           </div>
-          <div className={`font-mono ${isHero ? "text-base sm:text-lg" : "text-xs"} text-sky-400 font-semibold tracking-tight`}>
-            &lt;DevConf Landing /&gt;
+
+          {/* Title and Tagline */}
+          <div className={`font-bold ${isHero ? "text-xl sm:text-2xl" : "text-base"} text-lavender-200 tracking-tight`}>
+            DevStack
           </div>
-          <div className={`${isHero ? "text-sm mt-2 max-w-md" : "text-[11px] mt-1"} text-slate-400`}>
-            Semantic Web &amp; Vanilla JavaScript
+          <div className={`${isHero ? "text-sm mt-2 max-w-md" : "text-xs mt-1"} text-[#B9B0CC]`}>
+            Technology Explorer &amp; Custom Stack Builder
           </div>
-          <div className="mt-3 flex items-center gap-2">
-            <span className="px-2.5 py-0.5 rounded text-[10px] font-mono bg-sky-950/80 text-sky-300 border border-sky-800/80 flex items-center gap-1">
-              <Sparkles className="w-2.5 h-2.5" />
-              Project Mockup / Screenshot Placeholder
+
+          {/* Pill Highlights */}
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
+            <span className="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-[#171323] text-lavender-300 border border-[#342B49] flex items-center gap-1.5">
+              <Code2 className="w-3 h-3 text-lavender-400" />
+              <span>Tool Evaluation &amp; Stack Curation</span>
             </span>
+            {isHero && (
+              <span className="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-[#171323] text-lavender-300 border border-[#342B49] flex items-center gap-1.5">
+                <Sparkles className="w-3 h-3 text-lavender-400" />
+                <span>React &bull; TypeScript &bull; Vite</span>
+              </span>
+            )}
           </div>
         </div>
       );
@@ -106,15 +154,14 @@ export function ProjectThumbnail({ id, title, className = "", size = "card" }: P
       return (
         <div
           className={`w-full ${
-            isHero ? "h-64 sm:h-80" : "h-48"
-          } bg-slate-900 flex flex-col items-center justify-center text-slate-400 text-xs p-6 border-b border-slate-800 ${className}`}
+            isHero ? "h-64 sm:h-80" : "h-52"
+          } bg-[#1E1930] flex flex-col items-center justify-center text-[#B9B0CC] text-xs p-6 border-b border-[#342B49] ${className}`}
         >
-          <div className="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-slate-400 mb-2">
-            <Terminal className="w-6 h-6" />
+          <div className="w-12 h-12 rounded-xl bg-[#171323] border border-[#342B49] flex items-center justify-center text-lavender-300 mb-2">
+            <Layers className="w-6 h-6" />
           </div>
-          <span>{title} Preview</span>
+          <span className="font-semibold text-lavender-200">{title}</span>
         </div>
       );
   }
 }
-

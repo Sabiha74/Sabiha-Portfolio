@@ -179,6 +179,40 @@ export function VsCodeIcon({ className = "w-6 h-6" }: TechIconProps) {
   );
 }
 
+export function MongodbIcon({ className = "w-6 h-6" }: TechIconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M12 1.5c-.3 0-.6.1-.8.3C10.2 3.1 5 9.1 5 14.5c0 4.2 3.1 7.6 7 8 3.9-.4 7-3.8 7-8 0-5.4-5.2-11.4-6.2-12.7-.2-.2-.5-.3-.8-.3z"
+        fill="#13AA52"
+      />
+      <path
+        d="M12 1.5v21c3.9-.4 7-3.8 7-8 0-5.4-5.2-11.4-6.2-12.7-.2-.2-.5-.3-.8-.3z"
+        fill="#119246"
+      />
+      <path
+        d="M12 6.5v12.2c1.7-.5 3-2 3-3.7 0-2.8-2.5-6.5-3-8.5z"
+        fill="#FFFFFF"
+        opacity="0.3"
+      />
+    </svg>
+  );
+}
+
+export function SqlIcon({ className = "w-6 h-6" }: TechIconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <ellipse cx="12" cy="5" rx="8" ry="3" fill="#00758F" />
+      <path d="M4 5v4.5c0 1.66 3.58 3 8 3s8-1.34 8-3V5" fill="#00758F" opacity="0.85" />
+      <ellipse cx="12" cy="9.5" rx="8" ry="3" fill="#008EA4" />
+      <path d="M4 9.5V14c0 1.66 3.58 3 8 3s8-1.34 8-3V9.5" fill="#00758F" opacity="0.85" />
+      <ellipse cx="12" cy="14" rx="8" ry="3" fill="#00A0B8" />
+      <path d="M4 14v4.5c0 1.66 3.58 3 8 3s8-1.34 8-3V14" fill="#00758F" />
+      <ellipse cx="12" cy="18.5" rx="8" ry="3" fill="#38BDF8" opacity="0.9" />
+    </svg>
+  );
+}
+
 export function renderTechIcon(name: string, className = "w-6 h-6") {
   const normalized = name.toLowerCase().replace(/[^a-z0-9+]/g, "");
 
@@ -228,6 +262,13 @@ export function renderTechIcon(name: string, className = "w-6 h-6") {
       return <ExpressIcon className={className} />;
     case "laravel":
       return <LaravelIcon className={className} />;
+    case "mongodb":
+    case "mongo":
+      return <MongodbIcon className={className} />;
+    case "sql":
+    case "mysql":
+    case "postgresql":
+      return <SqlIcon className={className} />;
     case "git":
       return <GitIcon className={className} />;
     case "github":

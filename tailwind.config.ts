@@ -12,22 +12,34 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        navy: {
-          950: "#070B14",
-          900: "#0B1120",
-          850: "#0F172A",
-          800: "#1E293B",
-          700: "#334155",
+        lavender: {
+          50: "#FAF7FF",
+          100: "#F4EFFE",
+          200: "#E6DCFB",
+          300: "#D3C2F8",
+          400: "#B69CFF", // Primary lavender accent (dark)
+          500: "#9675E8", // Secondary lavender
+          600: "#7C55E7", // Primary lavender (light)
+          700: "#653DD1",
+          800: "#4F2CB3",
+          900: "#3A1E8A",
+          950: "#210D59",
         },
-        accent: {
-          50: "#EFF6FF",
-          100: "#DBEAFE",
-          200: "#BFDBFE",
-          300: "#93C5FD",
-          400: "#60A5FA",
-          500: "#3B82F6",
-          600: "#2563EB",
-          700: "#1D4ED8",
+        themeDark: {
+          bg: "#100D18",
+          surface: "#171323",
+          card: "#1E1930",
+          border: "#342B49",
+          text: "#F4F0FC",
+          muted: "#B9B0CC",
+        },
+        themeLight: {
+          bg: "#FCFAFF",
+          surface: "#F4EFFE",
+          card: "#FFFFFF",
+          border: "#E2D9F3",
+          text: "#1C152B",
+          muted: "#6C5F82",
         },
       },
       fontFamily: {
@@ -40,4 +52,3 @@ const config: Config = {
 };
 
 export default config;
-

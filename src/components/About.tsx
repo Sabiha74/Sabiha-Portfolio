@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { User, Sparkles, BookOpen, HeartHandshake, CheckCircle2 } from "lucide-react";
+import { User, GraduationCap, MapPin, Award, CheckCircle2 } from "lucide-react";
 import { personalInfo } from "@/data/portfolioData";
 
 export function About() {
@@ -9,109 +9,51 @@ export function About() {
     <section
       id="about"
       aria-label="About Me"
-      className="py-20 bg-slate-50/60 dark:bg-slate-900/30 border-y border-slate-200/60 dark:border-slate-800/60 transition-colors"
+      className="py-20 sm:py-24 bg-[#FAF7FF]/50 dark:bg-[#171323]/50 border-y border-[#E2D9F3] dark:border-[#342B49] transition-colors"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col items-start max-w-2xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 border border-blue-200/50 dark:border-blue-900/50 mb-3">
-            <User className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-lavender-600 dark:text-lavender-300 bg-lavender-100 dark:bg-lavender-950/60 border border-lavender-200 dark:border-lavender-500/30 mb-3">
+            <User className="w-3.5 h-3.5 text-lavender-500 dark:text-lavender-400" />
             <span>About Me</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
-            From Algorithmic Foundations to Full Stack Engineering
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#1C152B] dark:text-[#F4F0FC]">
+            Professional Introduction
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-slate-600 dark:text-slate-400">
-            A CSE graduate and Full Stack Developer focused on building robust, performant web applications with modern frontend and backend architectures.
-          </p>
         </div>
 
-        {/* Content Grid */}
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Main Narrative (Left 7 cols) */}
-          <div className="lg:col-span-7 space-y-5 text-slate-700 dark:text-slate-300 leading-relaxed text-base sm:text-lg">
-            {personalInfo.bioFull.map((paragraph, idx) => (
-              <p key={idx} className="bg-white dark:bg-slate-900/60 p-5 rounded-xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm">
-                {paragraph}
-              </p>
-            ))}
+        {/* Short, Professional Content Card */}
+        <div className="mt-8 bg-white dark:bg-[#1E1930] rounded-2xl border border-[#E2D9F3] dark:border-[#342B49] p-6 sm:p-8 lg:p-10 shadow-sm relative overflow-hidden">
+          {/* Subtle lavender accent bar */}
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-lavender-600 via-lavender-400 to-lavender-300" />
 
-            {/* Target Roles Card */}
-            <div className="p-6 rounded-xl bg-blue-50/50 dark:bg-blue-950/20 border border-blue-100 dark:border-blue-900/40">
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-blue-700 dark:text-blue-300 flex items-center gap-2">
-                <HeartHandshake className="w-4 h-4" />
-                Target Opportunities
-              </h3>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {personalInfo.openToRoles.map((role) => (
-                  <span
-                    key={role}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs sm:text-sm font-medium bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-blue-200/60 dark:border-blue-800/60 shadow-xs"
-                  >
-                    <CheckCircle2 className="w-3.5 h-3.5 text-blue-500" />
-                    {role}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
+          {/* User's Exact Concise Statement */}
+          <p className="text-lg sm:text-xl text-[#4A3E60] dark:text-[#D4CCE5] leading-relaxed font-normal">
+            {personalInfo.aboutStatement}
+          </p>
 
-          {/* Right Highlights & Focus Areas (5 cols) */}
-          <div className="lg:col-span-5 space-y-6">
-            {/* Quick Education Summary Card */}
-            <div className="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
-              <div className="flex items-center gap-2 text-slate-900 dark:text-white font-semibold text-lg">
-                <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                <h3>Academic &amp; Contest Background</h3>
-              </div>
-              <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
-                Graduated with a Bachelor of Science in Computer Science and Engineering from <strong>{personalInfo.institution}</strong>.
-              </p>
+          {/* Quick Context Badges */}
+          <div className="mt-8 pt-6 border-t border-[#E2D9F3]/80 dark:border-[#342B49] flex flex-wrap items-center gap-3">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-medium bg-[#FAF7FF] dark:bg-[#171323] text-lavender-700 dark:text-lavender-300 border border-lavender-200/80 dark:border-lavender-500/30">
+              <GraduationCap className="w-3.5 h-3.5 text-lavender-500 dark:text-lavender-400" />
+              <span>BSc in CSE &bull; Daffodil International University</span>
+            </span>
 
-              <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-500 space-y-2">
-                <div className="flex justify-between py-1">
-                  <span className="text-slate-500 dark:text-slate-400">University:</span>
-                  <span className="font-medium text-slate-800 dark:text-slate-200 text-right">{personalInfo.institution}</span>
-                </div>
-                <div className="flex justify-between py-1">
-                  <span className="text-slate-500 dark:text-slate-400">Department:</span>
-                  <span className="font-medium text-slate-800 dark:text-slate-200 text-right">{personalInfo.department}</span>
-                </div>
-                <div className="flex justify-between py-1">
-                  <span className="text-slate-500 dark:text-slate-400">Contest Achievements:</span>
-                  <span className="font-medium text-blue-600 dark:text-blue-400 text-right">ICPC 2024 &bull; NGPC 2022 Finalist</span>
-                </div>
-                <div className="flex justify-between py-1">
-                  <span className="text-slate-500 dark:text-slate-400">Location:</span>
-                  <span className="font-medium text-slate-800 dark:text-slate-200 text-right">{personalInfo.location}</span>
-                </div>
-              </div>
-            </div>
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-medium bg-[#FAF7FF] dark:bg-[#171323] text-[#4A3E60] dark:text-[#D4CCE5] border border-[#E2D9F3] dark:border-[#342B49]">
+              <MapPin className="w-3.5 h-3.5 text-lavender-400" />
+              <span>{personalInfo.location}</span>
+            </span>
 
-            {/* Focus Areas / Technical Interests */}
-            <div className="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
-              <div className="flex items-center justify-between">
-                <h3 className="font-semibold text-slate-900 dark:text-white flex items-center gap-2">
-                  <Sparkles className="w-4 h-4 text-amber-500" />
-                  Technical Focus Areas
-                </h3>
-              </div>
-              <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-                Core technologies and engineering domains I actively work with and enjoy building.
-              </p>
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-medium bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 border border-amber-200/60 dark:border-amber-800/60">
+              <Award className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
+              <span>ICPC 2024 Dhaka Regional &bull; NGPC 2022 Finalist</span>
+            </span>
 
-              <ul className="mt-4 space-y-2.5" role="list">
-                {personalInfo.interests.map((interest, idx) => (
-                  <li
-                    key={idx}
-                    className="flex items-start gap-2.5 p-2.5 rounded-lg text-xs sm:text-sm bg-slate-50 dark:bg-slate-800/60 text-slate-700 dark:text-slate-300 border border-slate-200/60 dark:border-slate-700/60"
-                  >
-                    <span className="mt-0.5 text-blue-500 font-bold">&bull;</span>
-                    <span className="flex-1">{interest}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-medium bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/60">
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
+              <span>Open for Full Stack &amp; Frontend Roles</span>
+            </span>
           </div>
         </div>
       </div>
