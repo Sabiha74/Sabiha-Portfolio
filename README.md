@@ -5,7 +5,7 @@ A personal portfolio website showcasing my skills, projects, education, and achi
 
 ## 🌐 Live Portfolio
 
-[Visit My Portfolio](YOUR_VERCEL_PORTFOLIO_URL)
+[Visit My Portfolio](https://sabiha-portfolio-seven.vercel.app/)
 
 ## 👩‍💻 About Me
 
