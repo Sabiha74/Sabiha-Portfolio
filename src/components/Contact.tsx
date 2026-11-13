@@ -288,10 +288,10 @@ export function Contact() {
                       setFormData({ ...formData, name: e.target.value });
                       if (errors.name) setErrors({ ...errors, name: undefined });
                     }}
-                    className={`w-full px-3.5 py-2.5 rounded-xl text-sm bg-[#FAF7FF] dark:bg-[#171323] text-[#1C152B] dark:text-[#F4F0FC] border ${
+                    className={`w-full px-3.5 py-2.5 rounded-xl text-sm bg-[#1E1930] text-[#F4F0FC] border ${
                       errors.name
                         ? "border-rose-500 focus:ring-rose-500"
-                        : "border-[#E2D9F3] dark:border-[#342B49] focus:border-lavender-400 focus:ring-lavender-400"
+                        : "border-[#342B49] focus:border-lavender-400 focus:ring-lavender-400"
                     } transition-colors focus:outline-none focus:ring-2`}
                   />
                   {errors.name && (
@@ -319,10 +319,10 @@ export function Contact() {
                       setFormData({ ...formData, email: e.target.value });
                       if (errors.email) setErrors({ ...errors, email: undefined });
                     }}
-                    className={`w-full px-3.5 py-2.5 rounded-xl text-sm bg-[#FAF7FF] dark:bg-[#171323] text-[#1C152B] dark:text-[#F4F0FC] border ${
+                    className={`w-full px-3.5 py-2.5 rounded-xl text-sm bg-[#1E1930] text-[#F4F0FC] border ${
                       errors.email
                         ? "border-rose-500 focus:ring-rose-500"
-                        : "border-[#E2D9F3] dark:border-[#342B49] focus:border-lavender-400 focus:ring-lavender-400"
+                        : "border-[#342B49] focus:border-lavender-400 focus:ring-lavender-400"
                     } transition-colors focus:outline-none focus:ring-2`}
                   />
                   {errors.email && (
@@ -351,11 +351,11 @@ export function Contact() {
                     setFormData({ ...formData, subject: e.target.value });
                     if (errors.subject) setErrors({ ...errors, subject: undefined });
                   }}
-                  className={`w-full px-3.5 py-2.5 rounded-xl text-sm bg-[#FAF7FF] dark:bg-[#171323] text-[#1C152B] dark:text-[#F4F0FC] border ${
+                  className={`w-full px-3.5 py-2.5 rounded-xl text-sm bg-[#1E1930] text-[#F4F0FC] border ${
                     errors.subject
                       ? "border-rose-500 focus:ring-rose-500"
-                      : "border-[#E2D9F3] dark:border-[#342B49] focus:border-lavender-400 focus:ring-lavender-400"
-                    } transition-colors focus:outline-none focus:ring-2`}
+                      : "border-[#342B49] focus:border-lavender-400 focus:ring-lavender-400"
+                  } transition-colors focus:outline-none focus:ring-2`}
                 />
                 {errors.subject && (
                   <p className="mt-1 text-xs text-rose-500">{errors.subject}</p>
@@ -382,11 +382,11 @@ export function Contact() {
                     setFormData({ ...formData, message: e.target.value });
                     if (errors.message) setErrors({ ...errors, message: undefined });
                   }}
-                  className={`w-full px-3.5 py-2.5 rounded-xl text-sm bg-[#FAF7FF] dark:bg-[#171323] text-[#1C152B] dark:text-[#F4F0FC] border ${
+                  className={`w-full px-3.5 py-2.5 rounded-xl text-sm bg-[#1E1930] text-[#F4F0FC] border ${
                     errors.message
                       ? "border-rose-500 focus:ring-rose-500"
-                      : "border-[#E2D9F3] dark:border-[#342B49] focus:border-lavender-400 focus:ring-lavender-400"
-                    } transition-colors focus:outline-none focus:ring-2 resize-y`}
+                      : "border-[#342B49] focus:border-lavender-400 focus:ring-lavender-400"
+                  } transition-colors focus:outline-none focus:ring-2 resize-y`}
                 />
                 {errors.message && (
                   <p className="mt-1 text-xs text-rose-500">{errors.message}</p>

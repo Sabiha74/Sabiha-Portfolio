@@ -44,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
-      <body className="font-sans antialiased bg-white dark:bg-navy-950 text-slate-900 dark:text-slate-100 transition-colors duration-200">
+      <body className="font-sans antialiased bg-white dark:bg-[#100D18] text-[#1C152B] dark:text-[#F4F0FC] transition-colors duration-200">
         <ThemeProvider>
           <div className="flex min-h-screen flex-col">
             <Navbar />
